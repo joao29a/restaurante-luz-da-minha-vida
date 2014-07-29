@@ -4,6 +4,7 @@
     width: 80%;
     border-style: ridge;
     border-width: 3px;
+    height: 100%;
     overflow: hidden;
 }
 
@@ -19,12 +20,14 @@
 
 #menu{
     width: 20%;
-    background-color: blue;
     border-right: 2px ridge;
     float: left;
 }
 
 #content{
+    border-left: 1px solid;
+    padding: 10px;
+    overflow: hidden;
 }
 
 .menu-divisor{
@@ -68,4 +71,6 @@ a.menu-option:link, a.menu-option:visited{
 }
 
 #footer{
+    width: 50%;
+    border-top: 1px dotted;
 }

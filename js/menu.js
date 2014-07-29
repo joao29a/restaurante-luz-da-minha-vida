@@ -1,4 +1,6 @@
 $(document).ready(function(){
+    $('#content').load('public/home.html');
+
     $('#home').click(function(){
         $('#content').load('public/home.html');
     });
