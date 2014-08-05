@@ -31,4 +31,8 @@ $(document).ready(function(){
     $('#show-top').click(function(){
         $('#login-menu').toggle();
     });
+
+    $('#login').click(function(){
+        $('#content').load('public/login.html');
+    });
 });
