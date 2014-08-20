@@ -36,7 +36,15 @@
             <artifactId>vraptor</artifactId>
             <version>4.1.0-RC1</version> <!--or the latest version-->
         </dependency>
+        
+        <dependency> 
+            <groupId>mysql</groupId> 
+            <artifactId>mysql-connector-java</artifactId> 
+            <version>5.1.24</version> 
+        </dependency>
     </dependencies>
+    
+    
 
     <build>
         <plugins>
