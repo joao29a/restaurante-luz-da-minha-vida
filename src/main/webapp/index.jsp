@@ -1,10 +1,9 @@
-<!DOCTYPE html>
 <html>
     <head>
         <title>
             Restaurante Luz da Minha Vida
         </title>
-        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
     </head>
     <body>
         <div id="login-menu">

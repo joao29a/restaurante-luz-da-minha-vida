@@ -1,5 +1,6 @@
 package util;
 
+import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.service.ServiceRegistry;
@@ -8,14 +9,13 @@ import org.hibernate.service.ServiceRegistryBuilder;
 public class HibernateUtil {
 
     private static SessionFactory factory;
-    private static ServiceRegistry serviceRegistry;
-
-    public static void main(String[] args) {
+    
+    static {
         try {
             Configuration configuration = new Configuration();
             configuration.configure();
 
-            serviceRegistry = new ServiceRegistryBuilder().
+            ServiceRegistry serviceRegistry = new ServiceRegistryBuilder().
                     applySettings(configuration.getProperties()).
                     buildServiceRegistry();
             
@@ -25,6 +25,13 @@ public class HibernateUtil {
             throw new ExceptionInInitializerError(ex);
 
         }
-
+    }
+    
+    public static SessionFactory getSessionFactory(){
+        return factory;
+    }
+    
+    public static Session getSession(){
+        return factory.openSession();
     }
 }

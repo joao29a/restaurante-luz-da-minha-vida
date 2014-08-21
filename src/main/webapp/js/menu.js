@@ -37,6 +37,6 @@ $(document).ready(function(){
     });
 
     $('#register').click(function(){
-        $('#content').load('public/register.html');
+        $('#content').load('public/adicionar.jsp');
     });
 });
